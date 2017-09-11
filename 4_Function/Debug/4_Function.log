@@ -1,0 +1,42 @@
+﻿빌드 시작: 2017-09-11 오후 11:15:00
+     1>4 노드의 "C:\Users\USER\Documents\GitHub\Cpp_Class\4_Function\4_Function.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "4-0 함수에러예제.cpp" "4-1 함수프로토타입.cpp" "4-2 함수 호출 순.cpp" "4-3 리턴값이 있는 함수.cpp" "4-4 인라인 함수.cpp" "4-5 난수 발생 라이브러리 함수.cpp" "4-6 난수값 생성.cpp" "4-7 일정 범위 내의 난수값 생성.cpp" "4-8 Call by Value결과.cpp" "4-9 Call By Pointer결과.cpp"
+         4-9 Call By Pointer결과.cpp
+         4-8 Call by Value결과.cpp
+         4-7 일정 범위 내의 난수값 생성.cpp
+         4-6 난수값 생성.cpp
+         4-5 난수 발생 라이브러리 함수.cpp
+         4-4 인라인 함수.cpp
+         4-3 리턴값이 있는 함수.cpp
+         4-2 함수 호출 순.cpp
+         4-1 함수프로토타입.cpp
+         4-0 함수에러예제.cpp
+         코드를 생성하고 있습니다...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\USER\Documents\GitHub\Cpp_Class\Debug\4_Function.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\USER\Documents\GitHub\Cpp_Class\Debug\4_Function.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\USER\Documents\GitHub\Cpp_Class\Debug\4_Function.lib" /MACHINE:X86 "Debug\4-0 함수에러예제.obj"
+         "Debug\4-1 함수프로토타입.obj"
+         "Debug\4-2 함수 호출 순.obj"
+         "Debug\4-3 리턴값이 있는 함수.obj"
+         "Debug\4-4 인라인 함수.obj"
+         "Debug\4-5 난수 발생 라이브러리 함수.obj"
+         "Debug\4-6 난수값 생성.obj"
+         "Debug\4-7 일정 범위 내의 난수값 생성.obj"
+         "Debug\4-8 Call by Value결과.obj"
+         "Debug\4-9 Call By Pointer결과.obj"
+     1>4-1 함수프로토타입.obj : error LNK2005: "void __cdecl myFunc(void)" (?myFunc@@YAXXZ)이(가) 4-0 함수에러예제.obj에 이미 정의되어 있습니다.
+     1>4-1 함수프로토타입.obj : error LNK2005: _main이(가) 4-0 함수에러예제.obj에 이미 정의되어 있습니다.
+     1>4-2 함수 호출 순.obj : error LNK2005: _main이(가) 4-0 함수에러예제.obj에 이미 정의되어 있습니다.
+     1>4-3 리턴값이 있는 함수.obj : error LNK2005: _main이(가) 4-0 함수에러예제.obj에 이미 정의되어 있습니다.
+     1>4-4 인라인 함수.obj : error LNK2005: _main이(가) 4-0 함수에러예제.obj에 이미 정의되어 있습니다.
+     1>4-5 난수 발생 라이브러리 함수.obj : error LNK2005: _main이(가) 4-0 함수에러예제.obj에 이미 정의되어 있습니다.
+     1>4-6 난수값 생성.obj : error LNK2005: _main이(가) 4-0 함수에러예제.obj에 이미 정의되어 있습니다.
+     1>4-7 일정 범위 내의 난수값 생성.obj : error LNK2005: _main이(가) 4-0 함수에러예제.obj에 이미 정의되어 있습니다.
+     1>4-8 Call by Value결과.obj : error LNK2005: _main이(가) 4-0 함수에러예제.obj에 이미 정의되어 있습니다.
+     1>4-9 Call By Pointer결과.obj : error LNK2005: _main이(가) 4-0 함수에러예제.obj에 이미 정의되어 있습니다.
+     1>C:\Users\USER\Documents\GitHub\Cpp_Class\Debug\4_Function.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
+     1>"C:\Users\USER\Documents\GitHub\Cpp_Class\4_Function\4_Function.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:06.39
