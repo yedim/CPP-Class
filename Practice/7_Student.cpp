@@ -1,10 +1,11 @@
 #include <iostream>
 #include <ctime>
 #define ST_CNT 10
+#define SUB_CNT 3
 
 using namespace std;
 
-void PrintHighScore(int idx);
+void PrintHighScore(char sub[][6], int maxidx[]);
 
 struct Student
 {
@@ -21,9 +22,7 @@ int main()
 	srand((unsigned)time(NULL));
 
 	char sub[][6] = { "국어", "영어", "수학" };
-
 	bool flag = false;
-
 
 	//난수로 학생 정보 생성. 중복체크
 	for (int i = 0; i < ST_CNT; i++)
@@ -55,41 +54,37 @@ int main()
 		}
 	}
 
-	int kor_max = 0, eng_max = 0, math_max = 0;
-	int kor_maxidx = 0, eng_maxidx = 0, math_maxidx = 0;
+	int sub_max[SUB_CNT] = { 0, };
+	int sub_maxidx[SUB_CNT] = { 0, };
 
 	for (int i = 0; i < ST_CNT; i++)
 	{
-		if (student[i].kor > kor_max)
+		if (student[i].kor > sub_max[0])
 		{
-			kor_max = student[i].kor;
-			kor_maxidx = i;
+			sub_max[0] = student[i].kor;
+			sub_maxidx[0] = i;
 		}
-		if (student[i].eng > eng_max)
+		if (student[i].eng > sub_max[1])
 		{
-			eng_max = student[i].eng;
-			eng_maxidx = i;
+			sub_max[1] = student[i].eng;
+			sub_maxidx[1] = i;
 		}
-		if (student[i].math > math_max)
+		if (student[i].math >sub_max[2])
 		{
-			math_max = student[i].math;
-			math_maxidx = i;
+			sub_max[2] = student[i].math;
+			sub_maxidx[2] = i;
 		}
 	}
-
-	cout << sub[0] << "점수 가장 높은 학생 : ";
-	PrintHighScore(kor_maxidx);
-
-	cout << sub[1] << "점수 가장 높은 학생 : ";
-	PrintHighScore(eng_maxidx);
-
-	cout << sub[2] << "점수 가장 높은 학생 : ";
-	PrintHighScore(math_maxidx);
+	PrintHighScore(sub, sub_maxidx);
 
 	return 0;
 }
 
-void PrintHighScore(int idx)
+void PrintHighScore(char sub[][6],int maxidx[])
 {
-	printf("%6d%6s%6d%6d%6d\n", student[idx].num, student[idx].name, student[idx].kor, student[idx].eng, student[idx].math);
+	printf("%34s%10s%6s%6s%6s\n", "학번", "이름", "국어", "영어", "수학");
+	for (int i = 0; i < SUB_CNT; i++)
+	{
+		printf("%6s점수 가장 높은 사람 : %6d%10s%6d%6d%6d\n", sub[i],student[maxidx[i]].num, student[maxidx[i]].name, student[maxidx[i]].kor, student[maxidx[i]].eng, student[maxidx[i]].math);
+	}
 }
