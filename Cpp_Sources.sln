@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Practice", "Practice\Practi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7_Class", "7_Class\7_Class.vcxproj", "{6ADEC591-3618-4E85-9944-1AB8F049A7E1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8_Class and Object", "8_Class and Object\8_Class and Object.vcxproj", "{44BFC273-F1EB-44E5-BAF0-2C30C54E32E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -63,6 +65,10 @@ Global
 		{6ADEC591-3618-4E85-9944-1AB8F049A7E1}.Debug|Win32.Build.0 = Debug|Win32
 		{6ADEC591-3618-4E85-9944-1AB8F049A7E1}.Release|Win32.ActiveCfg = Release|Win32
 		{6ADEC591-3618-4E85-9944-1AB8F049A7E1}.Release|Win32.Build.0 = Release|Win32
+		{44BFC273-F1EB-44E5-BAF0-2C30C54E32E7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{44BFC273-F1EB-44E5-BAF0-2C30C54E32E7}.Debug|Win32.Build.0 = Debug|Win32
+		{44BFC273-F1EB-44E5-BAF0-2C30C54E32E7}.Release|Win32.ActiveCfg = Release|Win32
+		{44BFC273-F1EB-44E5-BAF0-2C30C54E32E7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

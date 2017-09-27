@@ -27,8 +27,5 @@
     <ClCompile Include="6-3 구조체를 클래스로 변경.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="7-1 new와 delete 연산자.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
