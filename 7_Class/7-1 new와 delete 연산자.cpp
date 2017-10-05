@@ -95,6 +95,9 @@ int main()
 	student.SetStudent(no, name);
 	student.PrintStudent();
 
+	/*Student stu;
+	stu= Student(2518, "임청");*///이렇게 하면 안됨
+
 	Student stu(2518, "임청");
 	stu.PrintStudent();
 
